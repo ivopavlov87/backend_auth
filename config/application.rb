@@ -24,6 +24,8 @@ module BackendAuth
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
 
+    # We want to be able to use any feature of our database,
+    # and the SQL format makes that possible
     config.active_record.schema_format = :sql
   end
 end
