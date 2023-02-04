@@ -6,8 +6,8 @@ ruby "3.2.0"
 # Brakeman analyzes our code for security vulnurabilities
 gem "brakeman"
 
-# bundle-audit checks our dependencies for vulnurabilities
-gem "bundle-audit"
+# bundler-audit checks our dependencies for vulnurabilities
+gem "bundler-audit"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4", ">= 7.0.4.2"
