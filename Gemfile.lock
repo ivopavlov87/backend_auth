@@ -69,7 +69,13 @@ GEM
     bcrypt (3.1.18)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
+    brakeman (5.4.0)
     builder (3.2.4)
+    bundle-audit (0.1.0)
+      bundler-audit
+    bundler-audit (0.9.1)
+      bundler (>= 1.2.0, < 3)
+      thor (~> 1.0)
     concurrent-ruby (1.2.0)
     crass (1.0.6)
     date (3.3.3)
@@ -77,6 +83,14 @@ GEM
       irb (>= 1.5.0)
       reline (>= 0.3.1)
     erubi (1.12.0)
+    factory_bot (6.2.1)
+      activesupport (>= 5.0.0)
+    factory_bot_rails (6.2.0)
+      factory_bot (~> 6.2.0)
+      railties (>= 5.0.0)
+    faker (3.1.1)
+      i18n (>= 1.8.11, < 2)
+    foreman (0.87.2)
     globalid (1.1.0)
       activesupport (>= 5.0)
     i18n (1.12.0)
@@ -161,7 +175,12 @@ PLATFORMS
 DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootsnap
+  brakeman
+  bundle-audit
   debug
+  factory_bot_rails
+  faker
+  foreman
   jwt
   pg (~> 1.1)
   puma (~> 5.0)
