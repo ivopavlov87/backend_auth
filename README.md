@@ -11,46 +11,59 @@ Strongly recommended that you have [Postgres.app](https://postgresapp.com/), [Ho
   - Rails: 7.0.4.2
   - PostgreSQL: 14
   - Postgres.app: 2.5.12
-## Tech
-### `gem "dotenv-rails"` - [GitHub Page](https://github.com/bkeepers/dotenv)
+## Notable Gems
+### `dotenv-rails` - [GitHub Page](https://github.com/bkeepers/dotenv)
 - All runtime config comes from the UNIX environment but we use dotenv to store that in files for development and testing
 - Shim to load environment variables from `.env` into `ENV` in development.
-### `gem "pg"` - [GitHub Page](https://github.com/ged/ruby-pg)
+### `pg` - [GitHub Page](https://github.com/ged/ruby-pg)
 - Because PostgreSQL. Use it. Love it.
-### `gem "jwt"` - [GitHub Page](https://github.com/jwt/ruby-jwt)
+### `jwt` - [GitHub Page](https://github.com/jwt/ruby-jwt)
 - Quickly adds secure token-based authentication to Ruby projects.
-### `gem "bcrypt"` - [GitHub Page](https://github.com/bcrypt-ruby/bcrypt-ruby)
+### `bcrypt` - [GitHub Page](https://github.com/bcrypt-ruby/bcrypt-ruby)
 - An easy way to keep your users' passwords secure.
 - Use Active Model [has_secure_password](https://guides.rubyonrails.org/active_model_basics.html#securepassword)
-### `gem "brakeman"` - [GitHub Page](https://github.com/presidentbeef/brakeman)
+### `brakeman` - [GitHub Page](https://github.com/presidentbeef/brakeman)
 - Brakeman analyzes our code for security vulnurabilities.
-### `gem "bundler-audit"` - [GitHub Page](https://github.com/rubysec/bundler-audit)
+### `bundler-audit` - [GitHub Page](https://github.com/rubysec/bundler-audit)
 - Bundler-audit checks our dependencies for vulnurabilities.
-### `gem "factory_bot_rails"` - [GitHub Page](https://github.com/thoughtbot/factory_bot_rails)
+### `factory_bot_rails` - [GitHub Page](https://github.com/thoughtbot/factory_bot_rails)
 - We use Factory Bot in place of fixtures.
-### `gem "foreman"` - [GitHub Page](https://github.com/ddollar/foreman)
+### `foreman` - [GitHub Page](https://github.com/ddollar/foreman)
 - Foreman runs all processes for local development.
-### `gem "faker"` - [GitHub Page](https://github.com/faker-ruby/faker)
+### `faker` - [GitHub Page](https://github.com/faker-ruby/faker)
 - We use Faker to generate values for attributes in each factory.
 
 ## Setup
 1. Pull down the app from version control
 2. Make sure you have PostgreSQL running
-3. `bin/setup`
+3. Run `bin/setup` - this will:
+  a. Create local `.env.*.local` files
+  b. Perform `bundle check || bundle install` for gems
+  c. Get your development database up and running, and migrated
+  d. Seed your database from `seeds.rb`
+  e. Setup test database
+
 
 ## Running The Back End
 ### All-in-one command (useful for when you're only doing front end work)
-- Make sure PostgreSQL is up and running
-- `brew services start redis` - to first get Redis working, then
-- `bin/run` - will run everything else for you, for easier debugging run things individually
-### For a debugging/development experience, in a terminal tab/window each:
-#### Rails server:
-`rails s` - this is your rails server
-#### Run Redis & Sidekiq for Background Jobs
+- Make sure PostgreSQL is up and running, then run `bin/run`
+- This will:
+  - Re/build the [Procfile.dev](https://judoscale.com/guides/six-tips-for-mastering-your-procfile)
+  - Check if Redis is running and if not, start Redis (`brew start services redis`)
+  - start Sidekiq (`bin/sidekiq`) via the generated Profile
+- To shut things down and exit, use `Ctrl+C`
+- `brew services stop redis` - to stop Redis as last step
+### For a debugging/development experience
+#### Step One:
+- Make sure Postgres is running, next step will fail if not.
+#### In a terminal tab/window each:
+##### Rails server:
+- `rails s` - this starts your rails server
+- `Ctrl+C` - to stop the server
+##### Run Redis & Sidekiq for Background Jobs
 - `brew services start redis` - Will start Redis
 - `redis-cli ping` - test to see if Redis is running, expected output: `PONG`
 - `bin/sidekiq` - Will start Sidekiq (for background jobs), will not start without Redis running
-###### To stop Sidekiq & Redis
 - `Ctrl+C` - to exit Sidekiq
 - `brew services stop redis` - to stop Redis
 
