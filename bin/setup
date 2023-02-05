@@ -32,11 +32,9 @@ def setup
   # doing a db:migrate
   system! "bin/rails db:reset || bin/rails db:migrate"
 
-  # TODO: Re-enable this after creating
-  # TODO: seed data
-  # log "Seeding the development database"
-  # # Seed the data
-  # system! "bin/rails db:seed"
+  log "Seeding the development database"
+  # Seed the data
+  system! "bin/rails db:seed"
 
   log "Dropping & recreating the test database"
   # Setting the RAILS_ENV explicitly to be sure
