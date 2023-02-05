@@ -27,3 +27,6 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Procfile.dev is generated, so should not be checked in
+Procfile.dev
