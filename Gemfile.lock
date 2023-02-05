@@ -75,6 +75,7 @@ GEM
       bundler (>= 1.2.0, < 3)
       thor (~> 1.0)
     concurrent-ruby (1.2.0)
+    connection_pool (2.3.0)
     crass (1.0.6)
     date (3.3.3)
     debug (1.7.1)
@@ -97,6 +98,11 @@ GEM
     irb (1.6.2)
       reline (>= 0.3.0)
     jwt (2.7.0)
+    lograge (0.12.0)
+      actionpack (>= 4)
+      activesupport (>= 4)
+      railties (>= 4)
+      request_store (~> 1.0)
     loofah (2.19.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -156,8 +162,17 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
+    redis-client (0.12.1)
+      connection_pool
     reline (0.3.2)
       io-console (~> 0.5)
+    request_store (1.5.1)
+      rack (>= 1.4)
+    sidekiq (7.0.3)
+      concurrent-ruby (< 2)
+      connection_pool (>= 2.3.0)
+      rack (>= 2.2.4)
+      redis-client (>= 0.11.0)
     thor (1.2.1)
     timeout (0.3.1)
     tzinfo (2.0.6)
@@ -180,9 +195,11 @@ DEPENDENCIES
   faker
   foreman
   jwt
+  lograge
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.2)
+  sidekiq
   tzinfo-data
 
 RUBY VERSION
