@@ -6,11 +6,11 @@ This repo is inspired by this [BlueBash.co](https://www.bluebash.co/blog/rails-6
 Strongly recommended that you have [Postgres.app](https://postgresapp.com/), [Homebrew](https://brew.sh/), and [Redis](https://redis.io/) installed on your system for best results as this is setup to take advantage of them.
 
 **Note**: This is still a work in progress and I will be adding more to it in the coming weeks/months. Will be trying to keep it up to date as best I can.
-Currently:
-- Ruby: 3.2.0
-- Rails: 7.0.4.2
-- PostgreSQL: 14
-- Postgres.app: 2.5.12
+- Current Top Level Tech Verisons:
+  - Ruby: 3.2.0
+  - Rails: 7.0.4.2
+  - PostgreSQL: 14
+  - Postgres.app: 2.5.12
 ## Tech
 ### `gem "dotenv-rails"` - [GitHub Page](https://github.com/bkeepers/dotenv)
 - All runtime config comes from the UNIX environment but we use dotenv to store that in files for development and testing
