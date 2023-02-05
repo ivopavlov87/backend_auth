@@ -11,7 +11,13 @@ class UserCreator
 
 
     log user, "created"
+    NewUserRegisteredJob.perform_async(user.id)
     Result.new(created: user.valid?, user: user)
+  end
+
+  def new_user_account_registered(user_id)
+    user = User.find(user_id)
+    NewUserMailer.new_user_account_created(user).deliver_now
   end
 
   class Result
