@@ -15,12 +15,14 @@ class UsersController < ApplicationController
 
 	# POST /users
 	def create
-		@user = User.new(user_params)
+		result = UserCreator.new.create_user(
+			User.new(user_params)
+		)
 
-		if @user.save
-			render json: @user, status: :created
+		if result.created?
+			render json: result.user, status: :created
 		else
-			render json: { errors: @user.errors.full_messages },
+			render json: { errors: result.user.errors.full_messages },
 						 status: :unprocessable_entity
 		end
 	end
