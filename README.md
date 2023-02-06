@@ -3,10 +3,12 @@ This repo is a template for a very basic but sustainable back end rails app with
 
 This repo is inspired by this [BlueBash.co](https://www.bluebash.co/blog/rails-6-7-api-authentication-with-jwt/) article. However, I have included extra gems, files, and commands to keep this back end sustainable. Overall structure is inspired (not 100% copied, just... mostly) by the ideology of [davetron5000](https://github.com/davetron5000)'s book: [Sustainable Web Development With Ruby on Rails: Practical Tips for Building Web Applications that Last](https://sustainable-rails.com/).
 
-Strongly recommended that you have [Postgres.app](https://postgresapp.com/), [Homebrew](https://brew.sh/), and [Redis](https://redis.io/) installed on your system for best results as this is setup to take advantage of them.
+Strongly recommended that you have [Postgres.app](https://postgresapp.com/), [Homebrew](https://brew.sh/), and [Redis](https://redis.io/) installed on your system for best results as this is configured to take advantage of them.
 
-**Note**: This is still a work in progress and I will be adding more to it in the coming weeks/months. Will be trying to keep it up to date as best I can.
-- Current Top Level Tech Verisons:
+**Note**: This is still a work in progress and I will be adding more to it in the coming weeks/months. Will be trying to keep it up to date as best I can. Things I will be adding:
+- Integrated RSpec
+
+##### Current Top Level Tech Verisons:
   - Ruby: 3.2.0
   - Rails: 7.0.4.2
   - PostgreSQL: 14
@@ -37,11 +39,11 @@ Strongly recommended that you have [Postgres.app](https://postgresapp.com/), [Ho
 1. Pull down the app from version control
 2. Make sure you have PostgreSQL running
 3. Run `bin/setup` - this will:
-  a. Create local `.env.*.local` files
-  b. Perform `bundle check || bundle install` for gems
-  c. Get your development database up and running, and migrated
-  d. Seed your database from `seeds.rb`
-  e. Setup test database
+  a. Perform `bundle check || bundle install` for gems
+  b. Get your development database up and running, and migrated
+  c. Seed your database from `seeds.rb`
+  d. Setup test database
+4. To overwrite environment variables, make a `.env.<environment_name>.local` file at the top-level and define them in there.
 
 
 ## Running The Back End
@@ -70,15 +72,10 @@ Strongly recommended that you have [Postgres.app](https://postgresapp.com/), [Ho
 ### MailCatcher - For When You Want to Send Out Emails
 - Do not add MailCatcher to your `Gemfile`, this will cause problems
 - `gem install mailcatcher` as a system gem instead
-- Add this to your `config/development.rb` file:
-```
-config.action_mailer.delivery_method = :smtp
-config.action_mailer.smtp_settings = { :address => '127.0.0.1', :port => 1025 }
-config.action_mailer.raise_delivery_errors = false
-```
-
 - See [MailCatcher](https://mailcatcher.me/) for more details
 - Start MailCatcher with `mailcatcher`
+- Access MailCatcher by going to `http://127.0.0.1:1080/` in your browser
+- Quit/Stop MailCatcher via the User Interface
 
 ## Tests and CI
 
