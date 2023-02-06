@@ -13,7 +13,7 @@ class User < ApplicationRecord
 
 	def valid_email
 		unless email =~ /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
-      errors.add(:email, ": #{email} is not a valid email")
+      errors.add(:email, "#{email}, is not a valid email")
     end
 	end
 end
