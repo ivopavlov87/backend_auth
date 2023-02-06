@@ -82,3 +82,4 @@ Strongly recommended that you have [Postgres.app](https://postgresapp.com/), [Ho
 
 1. `bin/ci` contains all the tests and checks for the app
 2. `tmp/test.log` will use the production logging format *not* the development one
+3. To run all RSpec tests, use `bundle exec rspec`
