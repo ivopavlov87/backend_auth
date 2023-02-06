@@ -5,8 +5,7 @@ This repo is inspired by this [BlueBash.co](https://www.bluebash.co/blog/rails-6
 
 Strongly recommended that you have [Postgres.app](https://postgresapp.com/), [Homebrew](https://brew.sh/), and [Redis](https://redis.io/) installed on your system for best results as this is configured to take advantage of them.
 
-**Note**: This is still a work in progress and I will be adding more to it in the coming weeks/months. Will be trying to keep it up to date as best I can. Things I will be adding:
-- Integrated RSpec
+**Note**: This is not a complete work, and this is meant to be a template. Feel free to clone this repo and use it as boiler-plate code.
 
 ##### Current Top Level Tech Verisons:
   - Ruby: 3.2.0
@@ -34,6 +33,8 @@ Strongly recommended that you have [Postgres.app](https://postgresapp.com/), [Ho
 - Foreman runs all processes for local development.
 ### `faker` - [GitHub Page](https://github.com/faker-ruby/faker)
 - We use Faker to generate values for attributes in each factory.
+### `rspec-rails` - [GitHub Page](https://github.com/rspec/rspec-rails)
+- We use RSpec to run the tests.
 
 ## Setup
 1. Pull down the app from version control
