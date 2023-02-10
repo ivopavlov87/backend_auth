@@ -8,7 +8,6 @@ class User < ApplicationRecord
 	validates :email, presence: true, uniqueness: true
 	validate :valid_email
 
-	validates :password, presence: true
 	validates :username, presence: true, uniqueness: true
 
 	def valid_email
