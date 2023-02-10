@@ -78,5 +78,9 @@ end
 group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  
+  # for better debugging experience [https://github.com/deivid-rodriguez/pry-byebug]
+  # use by adding `binding.pry` in your code as the breakpoint
+  gem 'pry-byebug'
 end
 
