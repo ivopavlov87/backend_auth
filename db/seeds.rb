@@ -11,7 +11,7 @@ User.destroy_all
 
 puts "[ db/seeds.rb ] Creating development data..."
 
-User.create!(name: "First Last", email:"first@email.com", username: "seedUser", password: "password123!")
+User.create!(name: "First Last", email:"first@email.com", username: "seedUser", password: "Password123!")
 
 puts "[ db/seeds.rb ] Done"
 
