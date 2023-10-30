@@ -39,3 +39,6 @@
 
 # Procfile.dev is generated, so should not be checked in
 Procfile.dev
+
+# Not needed
+.byebug_history
