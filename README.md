@@ -8,10 +8,10 @@ Strongly recommended that you have [Postgres.app](https://postgresapp.com/), [Ho
 **Note**: This is not a complete work, and this is meant to be a template. Feel free to clone this repo and use it as boiler-plate code.
 
 ##### Current Top Level Tech Verisons:
-  - Ruby: 3.2.0
-  - Rails: 7.0.4.2
+  - Ruby: 3.2.2
+  - Rails: 7.1.1
   - PostgreSQL: 14
-  - Postgres.app: 2.5.12
+  - Postgres.app: 2.6.5
 ## Notable Gems
 ### `dotenv-rails` - [GitHub Page](https://github.com/bkeepers/dotenv)
 - All runtime config comes from the UNIX environment but we use dotenv to store that in files for development and testing
@@ -59,6 +59,8 @@ Strongly recommended that you have [Postgres.app](https://postgresapp.com/), [Ho
 ### For a debugging/development experience
 #### Step One:
 - Make sure Postgres is running, next step will fail if not.
+- For tests, breakpoint is `debugger`
+- For code, breakpoint is `binding.pry`, or `debugger`
 #### In a terminal tab/window each:
 ##### Rails server:
 - `rails s` - this starts your rails server
