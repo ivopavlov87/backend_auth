@@ -57,10 +57,8 @@ Strongly recommended that you have [Postgres.app](https://postgresapp.com/), [Ho
 - To shut things down and exit, use `Ctrl+C`
 - `brew services stop redis` - to stop Redis as last step
 ### For a debugging/development experience
-#### Step One:
 - Make sure Postgres is running, next step will fail if not.
-- For tests, breakpoint is `debugger`
-- For code, breakpoint is `binding.pry`, or `debugger`
+- For code, breakpoint is `binding.pry` (preferred), or `debugger`
 #### In a terminal tab/window each:
 ##### Rails server:
 - `rails s` - this starts your rails server
