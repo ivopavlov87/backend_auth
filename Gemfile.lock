@@ -77,7 +77,7 @@ GEM
     base64 (0.1.1)
     bcrypt (3.1.19)
     bigdecimal (3.1.4)
-    bootsnap (1.16.0)
+    bootsnap (1.17.0)
       msgpack (~> 1.2)
     brakeman (6.0.1)
     builder (3.2.4)
@@ -137,7 +137,7 @@ GEM
     minitest (5.20.0)
     msgpack (1.7.2)
     mutex_m (0.1.2)
-    net-imap (0.4.2)
+    net-imap (0.4.3)
       date
       net-protocol
     net-pop (0.1.2)
@@ -260,7 +260,7 @@ DEPENDENCIES
   pry-byebug
   puma (~> 6.4.0)
   rails (~> 7.1.1)
-  rspec-rails
+  rspec-rails (~> 6.0.3)
   sidekiq
   tzinfo-data
 
