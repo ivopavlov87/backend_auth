@@ -3,8 +3,8 @@
 set -e
 
 # TODO: make unit tests
-echo "[ bin/ci ] Running unit tests"
-# bin/rails test
+echo "[ bin/ci ] Running RSpec unit tests"
+bundle exec rspec
 
 # TODO: ... system tests... not needed for API only?
 echo "[ bin/ci ] Running system tests"
