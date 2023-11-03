@@ -59,6 +59,11 @@ Strongly recommended that you have [Postgres.app](https://postgresapp.com/), [Ho
 ### For a debugging/development experience
 - Make sure Postgres is running, next step will fail if not.
 - For code, breakpoint is `binding.pry` (preferred), or `debugger`
+- To use request logging:
+  - add `require "logging/logs"` to a file at the top
+  - add `include Logging::Logs` to the class
+  - example: `log @user.as_json, "something happened"`
+  - **Caution**: leaving this in your deployed/production code could expose sensitive information
 #### In a terminal tab/window each:
 ##### Rails server:
 - `rails s` - this starts your rails server
