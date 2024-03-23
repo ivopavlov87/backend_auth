@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.2.2"
+ruby "3.3.0"
 
 # All runtime config comes from the UNIX environment
 # but we use dotenv to store that in files for
@@ -22,7 +22,7 @@ gem "lograge"
 gem "sidekiq"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.1.1"
+gem "rails", "~> 7.1.3.2"
 
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
