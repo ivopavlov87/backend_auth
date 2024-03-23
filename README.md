@@ -8,10 +8,10 @@ Strongly recommended that you have [Postgres.app](https://postgresapp.com/), [Ho
 **Note**: This is not a complete work, and this is meant to be a template. Feel free to clone this repo and use it as boiler-plate code.
 
 ##### Current Top Level Tech Verisons:
-  - Ruby: 3.2.2
-  - Rails: 7.1.1
+  - Ruby: 3.3.0
+  - Rails: 7.1.3.2
   - PostgreSQL: 14
-  - Postgres.app: 2.6.5
+  - Postgres.app: 2.7.2
 ## Notable Gems
 ### `dotenv-rails` - [GitHub Page](https://github.com/bkeepers/dotenv)
 - All runtime config comes from the UNIX environment but we use dotenv to store that in files for development and testing
