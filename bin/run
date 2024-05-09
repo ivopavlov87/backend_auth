@@ -8,8 +8,15 @@ echo "# Use this via bin/run" >> Procfile.dev
 # We must bind to 0.0.0.0 inside a
 # Docker container or the port won't forward
 # Default binding is 127.0.0.1 for native
-echo "web: bin/rails server  --binding=127.0.0.1" >> Procfile.dev
-echo "sidekiq: bin/sidekiq" >> Procfile.dev
+if [[ "$1" == "debug" ]]; then
+  # start with "bin/run debug" to allow for debugging within VSCode
+  echo "web: bundle exec rdbg --open --nonstop -c -- bin/rails server --binding=127.0.0.1" >> Procfile.dev
+  echo "sidekiq: bundle exec rdbg --open --nonstop -c -- bin/sidekiq" >> Procfile.dev
+else
+  echo "web: bin/rails server  --binding=127.0.0.1" >> Procfile.dev
+  echo "sidekiq: bin/sidekiq" >> Procfile.dev
+fi
+
 set +e
 # Will check if redis responds with not an error exit
 # if it does not, it will start Redis
