@@ -58,6 +58,9 @@ gem "bootsnap", require: false
 # gem "rack-cors"
 
 group :development, :test do
+  # An opinionated language server for Ruby 
+  gem "ruby-lsp"
+
   # We use Factory Both in place of fixtures
   # to generate realistic test data
   gem "factory_bot_rails"

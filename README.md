@@ -35,6 +35,8 @@ Strongly recommended that you have [Postgres.app](https://postgresapp.com/), [Ho
 - We use Faker to generate values for attributes in each factory.
 ### `rspec-rails` - [GitHub Page](https://github.com/rspec/rspec-rails)
 - We use RSpec to run the tests.
+### `ruby-lsp` - [GitHub Page](https://github.com/Shopify/ruby-lsp)
+- An opinionated language server for Ruby. Used to improve rich features in editors.
 
 ## Setup
 1. Pull down the app from version control
