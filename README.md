@@ -9,15 +9,15 @@ Strongly recommended that you have [Postgres.app](https://postgresapp.com/), [Ho
 
 ##### Current Top Level Tech Verisons:
   - Ruby: 3.3.0
-  - Rails: 7.1.3.2
-  - PostgreSQL: 14
-  - Postgres.app: 2.7.2
+  - Rails: 7.1.3.3
+  - PostgreSQL: 16
+  - Postgres.app: 2.7.3
 ## Notable Gems
 ### `dotenv-rails` - [GitHub Page](https://github.com/bkeepers/dotenv)
 - All runtime config comes from the UNIX environment but we use dotenv to store that in files for development and testing
 - Shim to load environment variables from `.env` into `ENV` in development.
 ### `pg` - [GitHub Page](https://github.com/ged/ruby-pg)
-- Because PostgreSQL. Use it. Love it.
+- Because PostgreSQL. Use it. Love it. The gold standard of SQL.
 ### `jwt` - [GitHub Page](https://github.com/jwt/ruby-jwt)
 - Quickly adds secure token-based authentication to Ruby projects.
 ### `bcrypt` - [GitHub Page](https://github.com/bcrypt-ruby/bcrypt-ruby)
