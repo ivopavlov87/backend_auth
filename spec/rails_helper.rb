@@ -33,6 +33,9 @@ rescue ActiveRecord::PendingMigrationError => e
   abort e.to_s.strip
 end
 RSpec.configure do |config|
+  # Enable line below when you need help to fix deprecations
+  # config.raise_errors_for_deprecations!
+
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_paths = "#{::Rails.root}/spec/fixtures"
 
