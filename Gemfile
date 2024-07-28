@@ -59,6 +59,7 @@ gem "bootsnap", require: false
 
 group :development, :test do
   # An opinionated language server for Ruby 
+  gem 'rubocop', require: false
   gem "ruby-lsp"
 
   # We use Factory Both in place of fixtures
