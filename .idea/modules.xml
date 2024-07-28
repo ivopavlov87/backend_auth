@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/.iml" filepath="$PROJECT_DIR$/.idea/modules/.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/backend_auth.iml" filepath="$PROJECT_DIR$/.idea/backend_auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bundler-2.4.iml" filepath="$PROJECT_DIR$/.idea/modules/bundler-2.4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/specifications.iml" filepath="$PROJECT_DIR$/.idea/modules/specifications.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/templates.iml" filepath="$PROJECT_DIR$/.idea/modules/templates.iml" />
     </modules>
   </component>
 </project>

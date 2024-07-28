@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../../.ruby-lsp/.bundle/ruby/3.3.0/gems/bundler-2.4.21" />
+    <orderEntry type="jdk" jdkName="rbenv: 3.3.3" jdkType="RUBY_SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v2.5.16, rbenv: 3.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.5.1, rbenv: 3.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="io-console (v0.7.2, rbenv: 3.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="irb (v1.14.0, rbenv: 3.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="logger (v1.6.0, rbenv: 3.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="psych (v5.1.2, rbenv: 3.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rake (v13.2.1, rbenv: 3.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rdoc (v6.7.0, rbenv: 3.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="reline (v0.5.9, rbenv: 3.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rexml (v3.3.2, rbenv: 3.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ruby-graphviz (v1.2.5, rbenv: 3.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubygems-update (v3.5.16, rbenv: 3.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="strscan (v3.1.0, rbenv: 3.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="timeout (v0.4.1, rbenv: 3.3.3) [gem]" level="application" />
+  </component>
+  <component name="RubyModuleProperties">
+    <option name="autoCreated" value="true" />
+  </component>
+</module>
