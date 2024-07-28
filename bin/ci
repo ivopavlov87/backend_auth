@@ -7,7 +7,7 @@ echo "[ bin/ci ] Running RSpec unit tests"
 bundle exec rspec
 
 # TODO: ... system tests... not needed for API only?
-# echo "[ bin/ci ] Running system tests"
+echo "[ bin/ci ] Running system tests"
 # bin/rails test:system
 
 echo "[ bin/ci ] Analyzing code for security vulnerabilities"
