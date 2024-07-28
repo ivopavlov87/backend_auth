@@ -42,3 +42,4 @@ Procfile.dev
 
 # Not needed
 .byebug_history
+.DS_Store
