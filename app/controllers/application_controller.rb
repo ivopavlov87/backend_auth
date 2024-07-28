@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Top-level Application Controller
 class ApplicationController < ActionController::API
   include JsonWebToken
 
@@ -8,7 +9,7 @@ class ApplicationController < ActionController::API
 
   def set_request_id_in_thread_local
     Thread.current.thread_variable_set(
-      "request_id", request.request_id
+      'request_id', request.request_id
     )
   end
 
@@ -20,8 +21,8 @@ class ApplicationController < ActionController::API
   private
 
   def authenticate_request
-    header = request.headers["Authorization"]
-    header = header.split(" ").last if header
+    header = request.headers['Authorization']
+    header = header.split(' ').last if header
     decoded = jwt_decode(header)
     @current_user = User.find(decoded[:user_id])
   end

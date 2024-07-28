@@ -1,9 +1,10 @@
 # frozen_string_literal: true
 
-require "jwt"
+require 'jwt'
+# JSON Web-Token for authentication purposes
 module JsonWebToken
   extend ActiveSupport::Concern
-  SECRET_KEY = ENV["JWT_SECRET_KEY"]
+  SECRET_KEY = ENV['JWT_SECRET_KEY']
 
   def jwt_encode(payload, exp = 7.days.from_now)
     payload[:exp] = exp.to_i
