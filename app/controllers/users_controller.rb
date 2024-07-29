@@ -25,6 +25,8 @@ class UsersController < ApplicationController
     if result.created?
       render json: result.user, status: :created
     else
+      # noinspection RailsParamDefResolve
+      # on :unprocessable_entity
       render json: { errors: result.user.errors.full_messages },
              status: :unprocessable_entity
     end
@@ -38,6 +40,8 @@ class UsersController < ApplicationController
       # TODO: Hide the `password_digest` in the response
       render json: @user, status: :ok
     else
+      # noinspection RailsParamDefResolve
+      # on :unprocessable_entity
       render json: { errors: @user.errors.full_messages },
              status: :unprocessable_entity
     end
