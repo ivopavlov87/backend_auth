@@ -1,0 +1,8 @@
+<!-- TO_DO: Turn Type Signature for Ruby back on (RBS) -->
+
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="RbsMissingTypeSignature" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+  </profile>
+</component>
