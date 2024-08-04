@@ -19,6 +19,10 @@ class User < ApplicationRecord
     errors.add(:email, "#{email}, is not a valid email")
   end
 
+  def as_json(_options = {})
+    super(except: [:password_digest])
+  end
+
   def check_password_for_number
     return if ('0'..'9').to_a.any? { |num| password&.include?(num) }
 
