@@ -37,7 +37,6 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
 
     if @user.update(user_params)
-      # TODO: Hide the `password_digest` in the response
       render json: @user, status: :ok
     else
       # noinspection RailsParamDefResolve
