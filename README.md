@@ -37,6 +37,8 @@ Strongly recommended that you have [Postgres.app](https://postgresapp.com/), [Ho
 - We use RSpec to run the tests.
 ### `ruby-lsp` - [GitHub Page](https://github.com/Shopify/ruby-lsp)
 - An opinionated language server for Ruby. Used to improve rich features in editors.
+### `rubocop`- [GitHub Page](https://github.com/rubocop/rubocop)
+- RuboCop is a Ruby static code analyzer (a.k.a. `linter`) and code formatter.
 
 ## Setup
 1. Pull down the app from version control
