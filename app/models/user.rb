@@ -42,11 +42,11 @@ class User < ApplicationRecord
   end
 
   def check_password_for_special_character
-    special_chars = %w{@ % + ! # $ ^ ? : ( ) [ ] ~ - . _}
+    special_chars = %w{@ % + ! # $ ^ ? ( ) [ ] ~ - . _}
     return if special_chars.any? { |special_char| password&.include?(special_char) }
 
     # rubocop:disable Layout/LineLength
-    errors.add(:password, 'must contain at least one of the following special characters: @ % + . ! # $ ^ ? : ( ) [ ] ~ - _ and cannot contain other special characters')
+    errors.add(:password, 'must contain at least one of the following special characters: @ % + . ! # $ ^ ? ( ) [ ] ~ - _ and cannot contain other special characters')
     # rubocop:enable Layout/LineLength
   end
 
