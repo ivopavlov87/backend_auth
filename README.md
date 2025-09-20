@@ -10,7 +10,7 @@ Strongly recommended that you have [Postgres.app](https://postgresapp.com/), [Ho
 ##### Current Top Level Tech Verisons:
   - Ruby: 3.4.6
   - Rails: 8.0.2.1
-  - PostgreSQL: 16
+  - PostgreSQL: 17 (16 is also compatible with this)
   - Postgres.app: 2.7.6
 ## Notable Gems
 ### `dotenv-rails` - [GitHub Page](https://github.com/bkeepers/dotenv)
