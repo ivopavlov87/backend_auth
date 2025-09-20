@@ -17,8 +17,8 @@ Rails.application.configure do
 
   # Enable/disable Action Controller caching. By default Action Controller caching is disabled.
   # Run rails dev:cache to toggle Action Controller caching.
-  if Rails.root.join("tmp/caching-dev.txt").exist?
-    config.public_file_server.headers = { "cache-control" => "public, max-age=#{2.days.to_i}" }
+  if Rails.root.join('tmp/caching-dev.txt').exist?
+    config.public_file_server.headers = { 'cache-control' => "public, max-age=#{2.days.to_i}" }
   else
     config.action_controller.perform_caching = false
   end
@@ -37,7 +37,7 @@ Rails.application.configure do
 
   # Set localhost to be used by links generated in mailer templates.
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = { :address => '127.0.0.1', :port => 1025 }
+  config.action_mailer.smtp_settings = { address: '127.0.0.1', port: 1025 }
   config.action_mailer.raise_delivery_errors = false
 
   # Print deprecation notices to the Rails logger.
