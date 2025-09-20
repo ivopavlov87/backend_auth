@@ -9,7 +9,7 @@ Strongly recommended that you have [Postgres.app](https://postgresapp.com/), [Ho
 
 ##### Current Top Level Tech Verisons:
   - Ruby: 3.3.4
-  - Rails: 7.2.0
+  - Rails: 8.0.2.1
   - PostgreSQL: 16
   - Postgres.app: 2.7.6
 ## Notable Gems
