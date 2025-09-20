@@ -8,7 +8,7 @@ Strongly recommended that you have [Postgres.app](https://postgresapp.com/), [Ho
 **Note**: This is not a complete work, and this is meant to be a template. Feel free to clone this repo and use it as boiler-plate code.
 
 ##### Current Top Level Tech Verisons:
-  - Ruby: 3.3.4
+  - Ruby: 3.4.6
   - Rails: 8.0.2.1
   - PostgreSQL: 16
   - Postgres.app: 2.7.6
