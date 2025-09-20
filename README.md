@@ -11,7 +11,7 @@ Strongly recommended that you have [Postgres.app](https://postgresapp.com/), [Ho
   - Ruby: 3.4.6
   - Rails: 8.0.2.1
   - PostgreSQL: 17 (16 is also compatible with this)
-  - Postgres.app: 2.7.6
+  - Postgres.app: 2.8.1
 ## Notable Gems
 ### `dotenv-rails` - [GitHub Page](https://github.com/bkeepers/dotenv)
 - All runtime config comes from the UNIX environment but we use dotenv to store that in files for development and testing
